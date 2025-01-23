@@ -1,0 +1,23 @@
+def calculate_mean(numbers):
+    return sum(numbers) / len(numbers)
+
+def main():
+    numbers = []
+    while True:
+        user_input = input("Enter a number (or type 'done' to finish): ")
+        if user_input.lower() == 'done':
+            break
+        try:
+            number = float(user_input)
+            numbers.append(number)
+        except ValueError:
+            print("Please enter a valid number.")
+    
+    if numbers:
+        mean = calculate_mean(numbers)
+        print(f"The mean of the entered numbers is: {mean}")
+    else:
+        print("No numbers were entered.")
+
+if __name__ == "__main__":
+    main()

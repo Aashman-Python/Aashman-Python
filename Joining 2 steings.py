@@ -1,0 +1,1 @@
+print("Aashman"+" "+"Kumar")#Output: Aashman Kumar
